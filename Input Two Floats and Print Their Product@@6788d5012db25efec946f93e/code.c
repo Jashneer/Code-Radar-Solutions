@@ -2,6 +2,6 @@
 
 int main;
 float a, b;
-scanf("%f %f\n", &a, &b);
+scanf("%.2f %.2f\n", &a, &b);
 printf("Product: a*b");
 return 0;
