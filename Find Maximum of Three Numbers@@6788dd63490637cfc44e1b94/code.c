@@ -7,13 +7,13 @@ int main() {
     scanf("%d %d %d", &a, &b, &c);
 
     if(a>b && a>c) {
-        printf("%d", a);
+        printf("%d\n", a);
     }
     else if(b>c) {
-        printf("%d", b);
+        printf("%d\n", b);
     }
     else {
-        printf("%d"; c);
+        printf("%d\n"; c);
     }
     return 0;
 }
