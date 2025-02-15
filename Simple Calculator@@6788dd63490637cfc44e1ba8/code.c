@@ -3,17 +3,12 @@
 
 int main() {
     int a, b;
-    int sum;
-    int sub;
-    int mul;
-    int divide;
-    char ch;
     scanf("%d %d", &a, &b);
     scanf("%c", &ch);
-    sum = a+b;
-    sub = a-b;
-    mul = a*b;
-    divide = a/b;
+    int sum = a+b;
+    int sub = a-b;
+    int mul = a*b;
+    int divide = a/b;
 
     switch(ch) {
         case '+' : printf("%d", sum);
