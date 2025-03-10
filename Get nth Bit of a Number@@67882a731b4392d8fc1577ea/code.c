@@ -3,8 +3,9 @@
 int main() {
     int number, position, bitValue; 
     scanf("%d %d", &number, &position);
-    bitValue = (number >> position) & 1;
+    bitValue = (number & (1 << position)) >> position;
     printf("%d\n", position, bitValue);
 
     return 0;
 }
+
