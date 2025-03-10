@@ -6,7 +6,6 @@ int main() {
     int index = 0; 
     scanf("%d", &decimal);
     if (decimal == 0) {
-        printf("Binary representation: 0\n");
         return 0;
     }
     while (decimal > 0) {
