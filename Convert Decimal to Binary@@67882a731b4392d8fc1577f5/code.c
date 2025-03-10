@@ -14,7 +14,7 @@ int main() {
         decimal /= 2;               
         index++;
     }
-    printf("Binary representation: ");
+   
     for (int i = index - 1; i >= 0; i--) {
         printf("%d", binary[i]);
     }
