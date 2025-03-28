@@ -13,10 +13,10 @@ int main() {
 
     for(int i = 0; i<n; i++) {
         if(arr[i]%2==0) {
-            even_count++
+            even_count++;
         }
         else {
-            odd_count++
+            odd_count++;
         }
     }
     printf("%d %d", even_count, odd_count);
