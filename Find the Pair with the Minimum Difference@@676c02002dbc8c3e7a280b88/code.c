@@ -2,13 +2,14 @@
 
 
 int pairs(int n, int arr[]) {
-    int diff = 1000;
+    int mindiff = 1000;
     for(int i = 0; i<n; i++) {
         for(int j = i+1; j<n; j++) {
-            if((arr[j] - arr[i] < diff)) {
-                diff = arr[j] - arr[i];
-            }
-            printf("%d %d", i, j);
+                int currdiff = arr[j] - arr[i];
+                if(currdiff < mindiff) {
+                    mindiff = currdiff;
+                }
+                printf("%d %d", arr[i], arr[j]);
         }
     }
   
