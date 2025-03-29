@@ -1,21 +1,9 @@
 #include <stdio.h>
 
-int binarySearch(int n, int arr[], int key) {
-    int start = 0, end = n-1;
-
-    while(start <= end) {
-        int mid = (start + end)/2;
-
-        //comparison
-        if(arr[mid] == key) {
-            end = mid-1;
-            return mid;
-        }
-        else if(arr[mid] < key) {
-            start = mid+1;
-        }
-        else {
-            end = mid-1;
+int linearSearch(int n, int arr[], int T) {
+    for(int i =0; i<n; i++) {
+        if(arr[i] == T) {
+            return i;
         }
     }
     return -1;
@@ -24,15 +12,17 @@ int binarySearch(int n, int arr[], int key) {
 int main() {
     int n;
     scanf("%d", &n);
+
     int arr[n];
     for(int i = 0; i<n; i++) {
-        scanf("%d", &arr[i]);
+        scanf("%d " &arr[i]);
     }
 
-    int key;
-    scanf("%d", &key);
+    int T;
+    scanf("%d", &T);
 
-    int index = binarySearch(n, arr, key);
-
+    int index = linearSearch(n, arr, T);
     printf("%d", index);
+
+    return 0;
 }
