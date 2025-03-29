@@ -8,8 +8,8 @@ int pairs(int n, int arr[]) {
             if((arr[j] - arr[i] < diff)) {
                 diff = arr[j] - arr[i];
             }
+            printf("%d %d", i, j);
         }
-        printf("%d %d", i, j);
     }
   
 
