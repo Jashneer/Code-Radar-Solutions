@@ -9,8 +9,8 @@ int pairs(int n, int arr[]) {
                 if(currdiff < mindiff) {
                     mindiff = currdiff;
                 }
-                printf("%d %d", arr[i], arr[j]);
         }
+         printf("%d %d", arr[i], arr[j]);
     }
   
 
