@@ -9,8 +9,8 @@ int pairs(int n, int arr[]) {
                 diff = arr[j] - arr[i];
             }
         }
+        printf("%d %d", i, j);
     }
-    printf("%d %d", i, j);
   
 
 }
