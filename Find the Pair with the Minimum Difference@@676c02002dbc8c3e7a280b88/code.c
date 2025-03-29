@@ -6,11 +6,12 @@ int pairs(int n, int arr[]) {
     for(int i = 0; i<n; i++) {
         for(int j = i+1; j<n; j++) {
             if((arr[j] - arr[i] < diff)) {
-                printf("%d %d", i, j);
+                diff = arr[j] - arr[i];
             }
         }
     }
-    return 0;
+    printf("%d %d", i, j);
+  
 
 }
 
