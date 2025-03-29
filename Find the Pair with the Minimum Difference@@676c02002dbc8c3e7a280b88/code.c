@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int diff = 1000;
-int pairs(int arr[]) {
+int pairs(int n, int arr[]) {
     for(int i = 0; i<n; i++) {
         for(int j = i+1; j<n; j++) {
             if((arr[j] - arr[i] < diff)) {
@@ -22,5 +22,5 @@ int main() {
         scanf("%d", arr[i]);
     }
 
-    pairs(arr);
+    pairs(n, arr);
 }
