@@ -16,7 +16,7 @@ void sortArray(int n, int arr[]) {
 void minDiff_pair(int n, int arr[]) {
 
     if(n<2) {
-        printf("-1\n") // not enough elements to find the pair
+        printf("-1\n"); // not enough elements to find the pair
     }
 
     sortArray(n, arr);
