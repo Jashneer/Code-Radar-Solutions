@@ -21,7 +21,7 @@ int main() {
         }
          if(count > max_count && count >n/2) {
                 max_count = count;
-                majority_element = arr[j];
+                majority_element = arr[i];
             }
     }
     if(majority_element != 0) {
