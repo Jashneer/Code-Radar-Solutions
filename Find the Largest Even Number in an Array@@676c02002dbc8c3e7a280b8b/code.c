@@ -3,7 +3,7 @@
 
 int largest_even_number(int n, int arr[]) {
 
-    int max = 0;
+    int max = -1;
     for(int i = 0; i<n; i++) {
         if(arr[i] > max && arr[i]%2==0) {
             max = arr[i];
