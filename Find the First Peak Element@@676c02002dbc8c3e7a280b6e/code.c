@@ -6,7 +6,7 @@ int peak_element(int n, int arr[]) {
             return arr[i]; // first peak element found
         }
     }
-    return -1 // first peak element not found
+    return -1; // first peak element not found
 }
 
 int main() {
@@ -15,7 +15,7 @@ int main() {
 
     int arr[n];
     for(int i = 0; i<n; i++) {
-        scanf("%d", arr[i]);
+        scanf("%d", &arr[i]);
     }
 
     peak_element(n, arr);
