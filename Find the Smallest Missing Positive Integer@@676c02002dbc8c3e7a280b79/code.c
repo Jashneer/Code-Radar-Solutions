@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int smallest_missing_number(int n, int arr[]) {
-    for(int i = 1; i<n; i++) {
+    for(int i = 1; i<=n; i++) {
         int found = 0;
         for(int j= 0; j<n; j++) {
             if(arr[j] == i) {
