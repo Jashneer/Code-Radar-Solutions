@@ -13,23 +13,25 @@ void sortArray(int n, int arr[]) {
     }
 }
 
-int  minDiff_pair(int n, int arr[]) {
+void minDiff_pair(int n, int arr[]) {
 
+    if(n<2) {
+        printf("-1\n") // not enough elements to find the pair
+    }
+
+    sortArray(n, arr);
     int minDiff = arr[1] - arr[0];
     int pair1 = arr[0], pair2 = arr[1];
-    sortArray(n, arr);
 
     for(int i = 0; i<n; i++) {
-        for(int j = i+1; j<n; j++) {
-            int diff = arr[j] - arr[i];
+            int diff = arr[i+1] - arr[i];
 
             if(diff < minDiff) {
                 minDiff = diff;
                 pair1 = arr[i];
-                pair2 = arr[j];
+                pair2 = arr[i+1];
             }
         }
-    }
     printf("%d %d", pair1, pair2);
 }
 
