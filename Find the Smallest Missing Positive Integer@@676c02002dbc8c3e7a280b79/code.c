@@ -13,7 +13,7 @@ int smallest_missing_number(int n, int arr[]) {
             return i;
         }
     }
-    return n+1;
+    return n;
 }
 
 int main() {
