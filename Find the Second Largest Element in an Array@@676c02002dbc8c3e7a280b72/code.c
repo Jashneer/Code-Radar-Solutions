@@ -13,9 +13,9 @@ int secondLargest(int n, int arr[]) {
         else if(arr[i] > second_largest && arr[i] != largest) {
             second_largest = arr[i];
         }
-        else {
-            printf("-1\n");
-        }
+    }
+    if(second_largest == INT_MIN) {
+        return -1;
     }
     return second_largest;
 }
