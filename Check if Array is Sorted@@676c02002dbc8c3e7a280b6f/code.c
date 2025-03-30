@@ -24,7 +24,7 @@ int main() {
         printf("Sorted\n");
     }
     else {
-        printf("-1\n");
+        printf("Not Sorted\n");
     }
    
 }
