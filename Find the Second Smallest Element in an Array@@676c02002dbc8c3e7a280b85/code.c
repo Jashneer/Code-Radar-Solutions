@@ -26,7 +26,9 @@ int main() {
     scanf("%d", &n);
 
     int arr[n];
-    scanf("%d", &arr[i]);
+    for(int i = 0; i<n; i++) {
+        scanf("%d", &arr[i]);
+    }
 
     int result = secondSmallest(n, arr);
     printf("%d", result);
