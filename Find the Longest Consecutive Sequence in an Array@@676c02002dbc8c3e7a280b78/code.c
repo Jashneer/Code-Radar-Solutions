@@ -20,7 +20,7 @@ int Longest_Consecutive_Sequence(int n, int arr[]) {
         int start = i;
         for(int j = i; j<n; j++) {
             int end = j;
-            lenght = 0;
+            int lenght = 0;
             for(int k = start; k<=end; k++) {
                 length++;
             }
