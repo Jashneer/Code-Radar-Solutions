@@ -15,7 +15,7 @@ void rotateArray(int n, int arr[], int k) {
     }
 
     //insert the elements stored in temp array at the start
-    for(i = 0; i<k; i++) {
+    for(int i = 0; i<k; i++) {
         arr[i] = temp[i];
     }
 }
