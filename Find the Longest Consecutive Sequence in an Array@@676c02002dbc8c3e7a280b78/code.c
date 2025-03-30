@@ -24,7 +24,7 @@ int Longest_Consecutive_Sequence(int n, int arr[]) {
         if(arr[i] = arr[i-1] + 1) {
             curr_length++;
         }
-        else if(arr[i] != arr[i-1] +1) {
+        else if(arr[i] != arr[i-1]) {
             curr_length = 1;
         }
         if(curr_length > max_length) {
