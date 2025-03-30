@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void RotateArray(int n, int arr, int k) {
+void RotateArray(int n, int arr[], int k) {
     int temp[k];
 
     //store last k elements in temp Array
