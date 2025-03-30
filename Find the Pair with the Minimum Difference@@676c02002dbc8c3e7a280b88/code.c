@@ -16,7 +16,7 @@ int pairs(int n, int arr[]) {
     }
     printf("%d %d", pair1, pair2);
   
-    return 0;
+    return -1;
 
 }
 
