@@ -9,7 +9,7 @@ int main() {
         printf("%d", &arr[i]);
     }
     
-    int max_count = 0;
+    int max_count = -1;
     for(int i = 0; i<n; i++) {
         int count = 1;
         for(int j = i+1; j<n; j++) {
@@ -17,10 +17,10 @@ int main() {
                 count++;
                 arr[j] = -1;
             }
-            if(count > max_count) {
+        }
+         if(count > max_count) {
                 max_count = count;
             }
-        }
-        printf("%d", max_count);
     }
+    printf("%d", arr[i]);
 }
