@@ -20,7 +20,9 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    printf("%d", largest_even_number(n, arr));
+    int result = largest_even_number(n, arr);
+
+    printf("%d", result);
 
     return 0;
 }
