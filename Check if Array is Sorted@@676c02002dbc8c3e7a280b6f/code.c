@@ -1,22 +1,12 @@
 #include <stdio.h>
 
 int sorted(int n, int arr[]) {
-    for(int i = 0; i<n-1; i++) {
-        int swap = 0;
-        for(int j = 0; j<n-1-i; j++) {
-            if(arr[j] > arr[j+1]) {
-                //swap
-                int temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = temp;
-                swap++;
-            }
-        }
-        if(swap == 0) {
-            printf("Sorted");
+    for(int i = 0; i<n; i++) {
+        if(arr[i] > arr[i+1]) {
+            return -1;
         }
     }
-    return -1;
+    return 1;
 }
 
 int main() {
@@ -30,5 +20,8 @@ int main() {
 
    sorted(n, arr);
 
+   if(sorted(n, arr)) {
+    printf("Sorted");
+   }
    
 }
