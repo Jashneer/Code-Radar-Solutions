@@ -8,9 +8,8 @@ int largest_even_number(int n, int arr[]) {
         if(arr[i] > max && arr[i]%2==0) {
             max = arr[i];
         }
-        return max;
     }
-    return -1;
+    return max;
 }
 int main() {
     int n; 
