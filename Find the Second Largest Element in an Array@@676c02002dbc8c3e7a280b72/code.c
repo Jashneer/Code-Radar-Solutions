@@ -14,7 +14,7 @@ int secondLargest(int n, int arr[]) {
             second_largest = arr[i];
         }
         else {
-            printf("-1\n")
+            printf("-1\n");
         }
     }
     return second_largest;
