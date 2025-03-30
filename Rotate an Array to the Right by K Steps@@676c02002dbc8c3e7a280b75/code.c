@@ -5,7 +5,7 @@ void RotateArray(int n, int arr[], int k) {
 
     //store last k elements in temp Array
     for(int i = 0; i<k; i++) {
-        temp[i] = arr[n-k+1];
+        temp[i] = arr[n-k+i];
     }
 
     //shift the remaining elements to the right
