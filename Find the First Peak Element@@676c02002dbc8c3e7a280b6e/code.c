@@ -18,5 +18,5 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    peak_element(n, arr);
+    printf("%d", peak_element(n, arr));
 }
