@@ -40,4 +40,6 @@ int main() {
 
     int count = count_prime(n, arr);
     printf("%d", count);
+
+    return 0;
 }
