@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void sorted(int n, int arr[]) {
+int sorted(int n, int arr[]) {
     for(int i = 0; i<n-1; i++) {
         int swap = 0;
         for(int j = 0; j<n-1-i; j++) {
@@ -11,6 +11,9 @@ void sorted(int n, int arr[]) {
                 arr[j+1] = temp;
                 swap++;
             }
+        }
+        if(swap == 0) {
+            printf("Sorted");
         }
     }
     return -1;
@@ -25,9 +28,7 @@ int main() {
         scanf("%d", arr[i]);
     }
 
-   int swap = peak(n, arr);
+   sorted(n, arr);
 
-    if(swap == 0) {
-        printf("Sorted");
-    }
+   
 }
