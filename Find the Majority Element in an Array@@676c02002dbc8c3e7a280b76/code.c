@@ -6,7 +6,7 @@ int main() {
 
     int arr[n];
     for(int i = 0; i<n; i++) {
-        printf("%d", &arr[i]);
+        scanf("%d", &arr[i]);
     }
     
     int max_count = -1;
