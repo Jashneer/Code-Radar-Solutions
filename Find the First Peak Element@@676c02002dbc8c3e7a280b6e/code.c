@@ -2,6 +2,16 @@
 
 int peak_element(int n, int arr[]) {
     for(int i = 0; i<n; i++) {
+        if(i == 0) {
+            if(arr[i] > arr[i+1]) {
+                return arr[i];
+            }
+        }
+        if(i == n-1) {
+            if(arr[i] > arr[i-1]) {
+                return arr[i];
+            }
+        }
         if(arr[i] > arr[i-1] && arr[i] >arr[i+1]) {
             return arr[i]; // first peak element found
         }
