@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int sorted(int n, int arr[]) {
-    for(int i = 0; i<n; i++) {
+    for(int i = 0; i<n-1; i++) {
         if(arr[i] > arr[i+1]) {
             return -1;
         }
@@ -18,10 +18,13 @@ int main() {
         scanf("%d", arr[i]);
     }
 
-   sorted(n, arr);
+    int result = sorted(n, arr);
 
-   if(sorted(n, arr)) {
-    printf("Sorted");
-   }
+    if(result == 1) {
+        printf("Sorted\n");
+    }
+    else {
+        printf("-1\n");
+    }
    
 }
