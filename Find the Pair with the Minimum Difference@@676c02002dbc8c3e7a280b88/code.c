@@ -2,7 +2,7 @@
 
 void sortArray(int n, int arr[]) {
     for(int i = 0; i<n-1; i++) {
-        for(int j = 0; i<n-1-i; j++) {
+        for(int j = 0; j<n-1-i; j++) {
             if(arr[j] > arr[j+1]) {
                 //swap
                 int temp = arr[j];
@@ -17,13 +17,14 @@ void minDiff_pair(int n, int arr[]) {
 
     if(n<2) {
         printf("-1\n"); // not enough elements to find the pair
+        return;
     }
 
     sortArray(n, arr);
     int minDiff = arr[1] - arr[0];
     int pair1 = arr[0], pair2 = arr[1];
 
-    for(int i = 0; i<n; i++) {
+    for(int i = 0; i<n-1; i++) {
             int diff = arr[i+1] - arr[i];
 
             if(diff < minDiff) {
