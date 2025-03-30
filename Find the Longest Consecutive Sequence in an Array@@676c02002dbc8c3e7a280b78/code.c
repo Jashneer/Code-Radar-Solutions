@@ -14,14 +14,16 @@ void sortArray(int n, int arr[]) {
 }
 
 int Longest_Consecutive_Sequence(int n, int arr[]) {
+
+    sortArray(n, arr);
     if(n==0) {
         return 0;
     }
     
     int max_length = 1;
     int curr_length = 1;
-    for(int i = 0; i<n; i++) {
-        if(arr[i] = arr[i-1] + 1) {
+    for(int i = 1; i<n; i++) {
+        if(arr[i] == arr[i-1] + 1) {
             curr_length++;
         }
         else if(arr[i] != arr[i-1]) {
